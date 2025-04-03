@@ -1,0 +1,26 @@
+{
+  "name": "login-com-banco-de-dados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego-smart-app/login-com-banco-de-dados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego-smart-app/login-com-banco-de-dados/issues"
+  },
+  "homepage": "https://github.com/diego-smart-app/login-com-banco-de-dados#readme",
+  "description": "",
+  "dependencies": {
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+
+  "type": "module"
+}

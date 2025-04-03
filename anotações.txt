@@ -1,0 +1,15 @@
+
+Instalar extensão sqlite viewer
+
+abrir terminal
+digitar
+npm init -y
+
+ainda no terminal
+digitar
+npm install sqlite3
+
+ainda no terminal
+digitar
+npm install sqlite
+
