@@ -15,5 +15,23 @@ async function criarTabelaUsuarios(nome, endereco, bairro, contato, email)
         db.run(`INSERT INTO usuarios (nome, endereco, bairro, contato, email) VALUES (?, ?, ?, ?, ?)`, [nome, endereco, bairro, contato, email])
     }
 
-    criarTabelaUsuarios('Diego Foudino', 'Rua: Beltino Ruy Tales, 98', 'Jardim das Garças', '(15) 9 9999-9999', 'email_fulano@gmail.com');
+    function envia_informacoes()
+        {
+            /*Obtém variáveis*/
+            var nome = Window.document.getElementById("inome").value;
+            var endereco = Window.document.getElementById("iendereco").value;
+            var bairro = Window.document.getElementById("ibairro").value;
+            var tel_contato = Window.document.getElementById("itel_contato").value;
+            var email = Window.document.getElementById("iemail").value;
+
+            window.alert(`Dados ${nome}, ${endereco}, ${bairro}, ${tel_contato}, ${email}`);
+
+            criarTabelaUsuarios(nome, endereco, bairro, tel_contato, email);
+
+            Window.document.getElementById("inome").value = "";
+            Window.document.getElementById("iendereco").value = "";
+            Window.document.getElementById("ibairro").value = "";
+            Window.document.getElementById("itel_contato").value = "";
+            Window.document.getElementById("iemail").value = "";
+        }
     

@@ -7,25 +7,37 @@
     <title>Salvando dados</title>
 </head>
 <body>
-    <div>
+    <div id="titulo_e_formulario">
         <h1>Preencha seus dados</h1>
 
         <form action="">
-            <label for="inome">Nome</label>
-            <input id="inome" type="text" required>
-            <br>
-            <label for="iendereco">Endereço</label>
-            <input id="iendereco" type="text" required>
-            <br>
-            <label for="ibairro">Bairro</label>
-            <input id="ibairro" type="text" required>
-            <br>
-            <label for="itel_contato">Contato</label>
-            <input id="itel_contato" type="tel" required>
-            <br>
-            <label for="iemail">Email</label>
-            <input id="iemail" type="email" required>
-            <button type="submit">
+
+            <div id="campo">
+                <label for="inome">Nome</label>
+            </div>
+                <input id="inome" maxlength="30" type="text" required>
+
+            <div id="campo">
+                <label for="iendereco">Endereço</label>
+            </div>
+                <input id="iendereco" maxlength="50" type="text" required>
+
+            <div id="campo">
+                <label for="ibairro">Bairro</label>
+            </div>
+                <input id="ibairro" maxlength="20" type="text" required>
+            
+            <div id="campo">
+                <label for="itel_contato">Contato</label>
+            </div>
+                <input id="itel_contato" maxlength="9" type="tel" required>
+
+            <div id="campo">
+                <label for="iemail">Email</label>
+            </div>
+                <input id="iemail" maxlength="30" type="email" required>
+
+            <button onclick="envia_informacoes()" type="submit">
                 Salvar
             </button>
             <button type="reset">
@@ -33,5 +45,9 @@
             </button>
         </form>
     </div>
+
+    <script src="ap.js">
+    </script>
+
 </body>
 </html>
