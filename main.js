@@ -1,0 +1,1 @@
+var db = openDatabase('banco', '1.0', 'Meu primeiro banco', 2 * 1024 * 1024);
